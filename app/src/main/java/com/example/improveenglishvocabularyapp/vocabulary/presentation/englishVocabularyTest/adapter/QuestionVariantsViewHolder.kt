@@ -1,0 +1,6 @@
+package com.example.improveenglishvocabularyapp.vocabulary.presentation.englishVocabularyTest.adapter
+
+import androidx.recyclerview.widget.RecyclerView
+import com.example.improveenglishvocabularyapp.databinding.WordTranslationBinding
+
+class QuestionVariantsViewHolder (val binding: WordTranslationBinding): RecyclerView.ViewHolder(binding.root)

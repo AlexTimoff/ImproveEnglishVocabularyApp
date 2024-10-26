@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ImproveEnglishVocabularyApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_yourself">ENGLISH VOCABULARY TEST</string>
+    <string name="image_quiz">welcome image</string>
+    <string name="words_to_remember">WORDS TO REMEMBER</string>
+    <string name="write_your_name">"Write your name "</string>
+    <string name="name">Name</string>
+    <string name="cont">CONTINUE</string>
+    <string name="choose_number">Select the number of questions</string>
+    <string name="progress_text">0</string>
+    <string name="your_result">Your result</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="correct_answers">SEE RIGHT ANSWERS</string>
+    <string name="submit">SUBMIT</string>
+    <string name="next_question">CONTINUE</string>
+    <string name="learn_words">LEARN NEW WORDS</string>
+    <string name="user_name">User name</string>
+</resources>

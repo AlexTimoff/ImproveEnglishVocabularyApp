@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/right_variant"
+    android:layout_margin="10dp"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/answer_number"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/word_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word – "
+        android:layout_marginStart="18dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/word_russian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="translation"
+        android:textSize="18sp"
+        android:textColor="@color/dark_blue" />
+
+    <ImageButton
+        android:id="@+id/add_to_database_btn"
+        android:background="@drawable/custom_ripple_effect"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/add_word"
+        android:gravity="center"
+        android:backgroundTint="@color/white" />
+
+</LinearLayout>

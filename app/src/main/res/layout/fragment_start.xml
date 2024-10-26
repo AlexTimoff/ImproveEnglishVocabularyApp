@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".vocabulary.presentation.englishVocabularyTest.fragments.StartFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/welcome_to_english"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:contentDescription="@string/image_quiz"
+        android:src="@drawable/welcome_english"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <Button
+        android:id="@+id/check_yourself"
+        android:background="@drawable/custom_ripple_effect"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_to_english"
+        android:textSize="18sp"
+        android:text="@string/check_yourself"/>
+
+
+    <Button
+        android:id="@+id/remember_words"
+        android:background="@drawable/custom_ripple_effect"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_yourself"
+        android:textSize="18sp"
+        android:text="@string/words_to_remember"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

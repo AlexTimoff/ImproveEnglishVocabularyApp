@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentStart">
+
+    <fragment
+        android:id="@+id/fragmentStart"
+        android:name="com.example.improveenglishvocabularyapp.vocabulary.presentation.englishVocabularyTest.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentRegistration"
+            app:destination="@id/fragmentRegistration" />
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentWordsToRemember"
+            app:destination="@+id/fragmentWordsToRemember" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentWordsToRemember"
+        android:name="com.example.improveenglishvocabularyapp.vocabulary.presentation.wordsToRemember.fragments.WordsToRememberFragment"
+        android:label="fragment_words_to_remember"
+        tools:layout="@layout/fragment_words_to_remember" >
+
+        <action
+            android:id="@+id/action_fragmentWordsToRemember_to_fragmentStart"
+            app:destination="@id/fragmentStart" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="com.example.improveenglishvocabularyapp.vocabulary.presentation.englishVocabularyTest.fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+
+        <action
+            android:id="@+id/action_fragmentRegistration_to_fragmentQuestion"
+            app:destination="@id/fragmentQuestion" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentQuestion"
+        android:name="com.example.improveenglishvocabularyapp.vocabulary.presentation.englishVocabularyTest.fragments.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" >
+
+        <action
+            android:id="@+id/action_fragmentQuestion_to_fragmenFinish"
+            app:destination="@id/fragmentFinish"
+            app:popUpTo="@+id/fragmentRegistration"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFinish"
+        android:name="com.example.improveenglishvocabularyapp.vocabulary.presentation.englishVocabularyTest.fragments.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" >
+
+        <action
+            android:id="@+id/action_fragmentFinish_to_fragmentRightAnswersList"
+            app:popUpTo="@+id/fragmentRegistration"
+            app:popUpToInclusive="false"
+            app:destination="@id/fragmentRightAnswersList" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentRightAnswersList"
+        android:name="com.example.improveenglishvocabularyapp.vocabulary.presentation.englishVocabularyTest.fragments.RightAnswersListFragment"
+        android:label="fragment_right_answers_list"
+        tools:layout="@layout/fragment_right_answers_list" >
+
+        <action
+            android:id="@+id/action_fragmentRightAnswersList_to_fragmentWordsToRemember"
+            app:destination="@id/fragmentWordsToRemember" />
+
+    </fragment>
+
+</navigation>
