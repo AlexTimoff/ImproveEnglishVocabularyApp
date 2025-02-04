@@ -4,13 +4,13 @@
 ![visual](https://github.com/user-attachments/assets/853fd604-9815-4938-805d-46ddc78c94d7)
 
 **Используемый стек**: 
-Kotlin 
-Clean Architecture 
-MVVM 
-Room 
-Coroutines
-Hilt 
-RecyclerView
+*Kotlin 
+*Clean Architecture 
+*MVVM 
+*Room 
+*Coroutines
+*Hilt 
+*RecyclerView
 
 **Как запустить**:
 1. Склонируйте репозиторий:
